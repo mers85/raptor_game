@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JQ</title>
+
+    <link rel="icon" href="../../../../favicon.ico">
+  </head>
+
+  <body>
+
+    <div  id="fondo_pantalla" class="container">
+      <img id="fondo_pantalla" src="https://i.imgur.com/O2vwLYy.png">
+
+      <div class="raptor"  >
+        <img src="img/raptor.gif">
+      </div>
+
+      <div class="livesUbuntu"  >
+        <p>Lives:  </p>
+      </div>
+
+      <div class="scoreboard"  >
+        <p>Score:<span id="score"></span></p>
+      </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="raptor_game.js"></script>
+  </body>
+  <style>
+
+      .container{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+      }
+
+      #fondo_pantalla {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+      }
+
+      .raptor img{
+          width: 100px;
+          transition: 1s;
+      }
+
+      .raptor {
+          width: 100px;
+          position: fixed;
+      }
+
+      .cactus img{
+          width: 30px;
+      }
+
+      .cactus {
+          width: 40px;
+          position: fixed;
+          transition: 4s;
+      }
+
+      img#lives{
+          width: 30px;
+          position: fixed;
+          top: 35px;
+          left: 1100px;
+      }
+
+      .livesUbuntu {
+          width: 30px;
+          position: fixed;
+          top: 28px;
+          left: 1020px;
+      }
+
+      .scoreboard {
+          width: 30px;
+          position: fixed;
+          top: 20px;
+          left: 100px;
+      }
+
+      .scoreboard {
+          width: 30px;
+          position: fixed;
+          top: 20px;
+          left: 100px;
+      }
+
+
+
+
+                </style>
+
+</html>
