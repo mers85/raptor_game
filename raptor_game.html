@@ -12,12 +12,16 @@
     <div  id="fondo_pantalla" class="container">
       <img id="fondo_pantalla" src="https://i.imgur.com/O2vwLYy.png">
 
-      <div class="raptor"  >
+      <div class="raptor" style="display:none;">
         <img src="img/raptor.gif">
       </div>
 
+      <div class="raptor_dies" style="display:none;" >
+        <img src="img/sangre.gif">
+      </div>
+
       <div class="livesUbuntu"  >
-        <p>Lives:  </p>
+        <p><span style="top: -5px;">Lives:</span></p>
       </div>
 
       <div class="scoreboard"  >
@@ -53,6 +57,18 @@
           position: fixed;
       }
 
+      .raptor_dies img{
+          width: 60px;
+          transition: 1s;
+          top: -20px;
+      }
+
+      .raptor_dies {
+          width: 60px;
+          position: fixed;
+          top: -20px;
+      }
+
       .cactus img{
           width: 30px;
       }
@@ -64,17 +80,16 @@
       }
 
       img#lives{
-          width: 30px;
-          position: fixed;
-          top: 35px;
-          left: 1100px;
+        width: 30px;
+        display: inline;
+        float: right;
+
       }
 
       .livesUbuntu {
-          width: 30px;
           position: fixed;
-          top: 28px;
-          left: 1020px;
+          top: 30px;
+          left: 900px;
       }
 
       .scoreboard {
